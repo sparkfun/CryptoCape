@@ -1051,6 +1051,22 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <pin name="NC1" x="-12.7" y="2.54" length="middle" direction="nc"/>
 <pin name="NC2" x="-12.7" y="0" length="middle" direction="nc"/>
 </symbol>
+<symbol name="ATAES132">
+<wire x1="7.62" y1="-7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<text x="-7.62" y="5.842" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="GND" x="-12.7" y="-5.08" length="middle" direction="pwr"/>
+<pin name="NC7" x="12.7" y="0" length="middle" direction="nc" rot="R180"/>
+<pin name="VCC" x="12.7" y="2.54" length="middle" direction="pwr" rot="R180"/>
+<pin name="SCL" x="12.7" y="-2.54" length="middle" rot="R180"/>
+<pin name="SDA" x="12.7" y="-5.08" length="middle" rot="R180"/>
+<pin name="NC3" x="-12.7" y="-2.54" length="middle" direction="nc"/>
+<pin name="NC1" x="-12.7" y="2.54" length="middle" direction="nc"/>
+<pin name="AUTHO" x="-12.7" y="0" length="middle"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="ATECC108" prefix="ECC">
@@ -1153,6 +1169,35 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <connect gate="G$1" pin="GND" pad="4"/>
 <connect gate="G$1" pin="NC1" pad="1"/>
 <connect gate="G$1" pin="NC2" pad="2"/>
+<connect gate="G$1" pin="NC3" pad="3"/>
+<connect gate="G$1" pin="NC7" pad="7"/>
+<connect gate="G$1" pin="SCL" pad="6"/>
+<connect gate="G$1" pin="SDA" pad="5"/>
+<connect gate="G$1" pin="VCC" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ATAES132" prefix="AES">
+<description>32Kb Serial EEPROM.
+AES-128-CCM.
+MAC.
+Secure Storage for 128-bit keys.
+Encrypted User Memory Readn and Write.
+HWRNG.
+2.5V to 5.5V.</description>
+<gates>
+<gate name="G$1" symbol="ATAES132" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOIC8">
+<connects>
+<connect gate="G$1" pin="AUTHO" pad="2"/>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="NC1" pad="1"/>
 <connect gate="G$1" pin="NC3" pad="3"/>
 <connect gate="G$1" pin="NC7" pad="7"/>
 <connect gate="G$1" pin="SCL" pad="6"/>
@@ -3664,6 +3709,12 @@ Various common sizes : AA, AAA, 20mm coin cell and 12mm coin cell.&lt;br&gt;
 <part name="GND9" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="JP13" library="SparkFun-Passives" deviceset="JUMPER-2" device="PTH" value="Jump for Read/Write"/>
 <part name="JP14" library="SparkFun-Passives" deviceset="JUMPER-2" device="PTH"/>
+<part name="AES1" library="cryptotronix" deviceset="ATAES132" device=""/>
+<part name="GND11" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="SUPPLY23" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
+<part name="C4" library="SparkFun-Capacitors" deviceset="0.1UF-25V(+80/-20%)(0603)" device="" value="0.1uF"/>
+<part name="GND28" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="SUPPLY24" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3707,6 +3758,7 @@ TPM      0x29
 ATECC108 0x60
 ATSHA204 0x64
 RTC      0x68</text>
+<text x="365.76" y="36.068" size="2.54" layer="94" font="vector">AES-128 (ATAES132)</text>
 </plain>
 <instances>
 <instance part="GND1" gate="1" x="93.98" y="20.32"/>
@@ -3828,6 +3880,12 @@ RTC      0x68</text>
 <attribute name="VALUE" x="117.475" y="68.58" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="JP14" gate="A" x="121.92" y="38.1" rot="R270"/>
+<instance part="AES1" gate="G$1" x="381" y="50.8"/>
+<instance part="GND11" gate="1" x="358.14" y="38.1"/>
+<instance part="SUPPLY23" gate="G$1" x="403.86" y="53.34"/>
+<instance part="C4" gate="G$1" x="421.64" y="45.72"/>
+<instance part="GND28" gate="1" x="421.64" y="38.1"/>
+<instance part="SUPPLY24" gate="G$1" x="421.64" y="53.34"/>
 </instances>
 <busses>
 </busses>
@@ -4070,6 +4128,17 @@ RTC      0x68</text>
 <wire x1="167.64" y1="182.88" x2="147.32" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="147.32" y1="182.88" x2="147.32" y2="177.8" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="GND11" gate="1" pin="GND"/>
+<wire x1="358.14" y1="40.64" x2="358.14" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="AES1" gate="G$1" pin="GND"/>
+<wire x1="358.14" y1="45.72" x2="368.3" y2="45.72" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND28" gate="1" pin="GND"/>
+<pinref part="C4" gate="G$1" pin="2"/>
+<wire x1="421.64" y1="40.64" x2="421.64" y2="43.18" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="VBAT" class="0">
 <segment>
@@ -4125,6 +4194,11 @@ RTC      0x68</text>
 <wire x1="165.1" y1="162.56" x2="170.18" y2="162.56" width="0.1524" layer="91"/>
 <label x="170.18" y="162.56" size="1.27" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="AES1" gate="G$1" pin="SCL"/>
+<wire x1="393.7" y1="48.26" x2="403.86" y2="48.26" width="0.1524" layer="91"/>
+<label x="403.86" y="48.26" size="1.27" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="I2C2_SDA" class="0">
 <segment>
@@ -4170,6 +4244,11 @@ RTC      0x68</text>
 <pinref part="JP5" gate="G$1" pin="9"/>
 <wire x1="165.1" y1="160.02" x2="170.18" y2="160.02" width="0.1524" layer="91"/>
 <label x="170.18" y="160.02" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="AES1" gate="G$1" pin="SDA"/>
+<wire x1="393.7" y1="45.72" x2="403.86" y2="45.72" width="0.1524" layer="91"/>
+<label x="403.86" y="45.72" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="SYS_RESET" class="0">
@@ -4439,6 +4518,16 @@ RTC      0x68</text>
 <pinref part="SUPPLY20" gate="G$1" pin="3.3V"/>
 <wire x1="177.8" y1="175.26" x2="177.8" y2="182.88" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="SUPPLY23" gate="G$1" pin="3.3V"/>
+<pinref part="AES1" gate="G$1" pin="VCC"/>
+<wire x1="403.86" y1="53.34" x2="393.7" y2="53.34" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C4" gate="G$1" pin="1"/>
+<pinref part="SUPPLY24" gate="G$1" pin="3.3V"/>
+<wire x1="421.64" y1="50.8" x2="421.64" y2="53.34" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="N$18" class="0">
 <segment>
@@ -4667,6 +4756,18 @@ RTC      0x68</text>
 <pinref part="JP5" gate="G$1" pin="6"/>
 <wire x1="165.1" y1="152.4" x2="167.64" y2="152.4" width="0.1524" layer="91"/>
 <label x="167.64" y="152.4" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="AUTH0" class="0">
+<segment>
+<pinref part="AES1" gate="G$1" pin="AUTHO"/>
+<wire x1="368.3" y1="50.8" x2="358.14" y2="50.8" width="0.1524" layer="91"/>
+<label x="358.14" y="50.8" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="P8" pin="GPIO_45"/>
+<wire x1="50.8" y1="251.46" x2="40.64" y2="251.46" width="0.1524" layer="91"/>
+<label x="40.64" y="251.46" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
