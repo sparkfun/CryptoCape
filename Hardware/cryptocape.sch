@@ -5178,7 +5178,7 @@ LILYPAD- DIO-09910&lt;br&gt;</description>
 <sheets>
 <sheet>
 <plain>
-<text x="358.14" y="7.62" size="3.81" layer="94" font="vector">Cryptotronix</text>
+<text x="350.52" y="7.62" size="2.54" layer="94">Cryptotronix</text>
 <wire x1="0" y1="116.84" x2="142.24" y2="116.84" width="0.1524" layer="94"/>
 <wire x1="142.24" y1="116.84" x2="142.24" y2="187.96" width="0.1524" layer="94"/>
 <text x="38.1" y="119.38" size="2.54" layer="94" font="vector">BeagleBone Black Headers</text>
@@ -5216,6 +5216,7 @@ ATECC108 0x60
 ATSHA204 0x64
 RTC      0x68</text>
 <text x="365.76" y="36.068" size="2.54" layer="94" font="vector">AES-128 (ATAES132)</text>
+<text x="350.52" y="10.16" size="2.54" layer="94">Josh Datko / Casey Kuhns</text>
 </plain>
 <instances>
 <instance part="GND1" gate="1" x="93.98" y="20.32"/>
