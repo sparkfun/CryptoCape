@@ -2818,7 +2818,6 @@ design rules under a new name.</description>
 <vertex x="36.322" y="12.7"/>
 <vertex x="36.322" y="12.573"/>
 <vertex x="43.307" y="12.573"/>
-<vertex x="43.307" y="12.573"/>
 <vertex x="44.069" y="11.811"/>
 <vertex x="44.069" y="10.922"/>
 <vertex x="47.498" y="10.922"/>
@@ -3238,12 +3237,14 @@ design rules under a new name.</description>
 <signal name="N$116">
 <via x="78.74" y="37.465" extent="1-16" drill="1" diameter="1.905"/>
 </signal>
-<signal name="N$117">
-<via x="81.28" y="37.465" extent="1-16" drill="1" diameter="1.905"/>
-<via x="81.28" y="40.005" extent="1-16" drill="1" diameter="1.905"/>
+<signal name="N$24">
 <via x="81.28" y="42.545" extent="1-16" drill="1" diameter="1.905"/>
-<wire x1="81.28" y1="40.005" x2="81.28" y2="42.545" width="0" layer="19" extent="1-1"/>
-<wire x1="81.28" y1="37.465" x2="81.28" y2="40.005" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$26">
+<via x="81.28" y="37.465" extent="1-16" drill="1" diameter="1.905"/>
+</signal>
+<signal name="N$117">
+<via x="81.28" y="40.005" extent="1-16" drill="1" diameter="1.905"/>
 </signal>
 <signal name="N$126">
 <via x="53.34" y="34.925" extent="1-16" drill="1" diameter="1.905"/>
