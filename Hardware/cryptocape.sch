@@ -5206,7 +5206,6 @@ LILYPAD- DIO-09910&lt;br&gt;</description>
 <text x="165.1" y="63.5" size="2.54" layer="94" font="vector">SHA-256 (ATSHA204)</text>
 <text x="200.66" y="121.92" size="2.54" layer="94" font="vector">Prototype Headers</text>
 <wire x1="287.02" y1="187.96" x2="287.02" y2="116.84" width="0.1524" layer="94"/>
-<text x="421.64" y="7.62" size="3.81" layer="94" font="vector">A</text>
 <wire x1="287.02" y1="116.84" x2="287.02" y2="60.96" width="0.1524" layer="94"/>
 <wire x1="231.14" y1="116.84" x2="287.02" y2="116.84" width="0.1524" layer="94"/>
 <text x="241.3" y="63.5" size="2.54" layer="94" font="vector">I2C Address Table</text>
@@ -5217,6 +5216,7 @@ ATSHA204 0x64
 RTC      0x68</text>
 <text x="365.76" y="36.068" size="2.54" layer="94" font="vector">AES-128 (ATAES132)</text>
 <text x="350.52" y="10.16" size="2.54" layer="94">Josh Datko / Casey Kuhns</text>
+<text x="421.64" y="7.62" size="2.54" layer="94">v01</text>
 </plain>
 <instances>
 <instance part="GND1" gate="1" x="93.98" y="20.32"/>
