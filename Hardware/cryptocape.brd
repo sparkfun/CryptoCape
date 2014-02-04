@@ -288,7 +288,7 @@
 <text x="85.09" y="27.94" size="1.778" layer="22" font="vector" ratio="15" rot="SMR270">Cryptotronix</text>
 <text x="85.09" y="45.466" size="1.778" layer="22" font="vector" ratio="15" rot="SMR270">CryptoCape</text>
 <text x="24.384" y="6.858" size="0.8128" layer="21" font="vector" ratio="15" rot="R180" align="bottom-center">I2C EN</text>
-<text x="6.096" y="52.578" size="1.27" layer="16" font="vector" ratio="15" rot="MR90" align="bottom-center">v01</text>
+<text x="6.096" y="52.578" size="1.27" layer="16" font="vector" ratio="15" rot="MR90" align="bottom-center">v02</text>
 <text x="50.8" y="-9.652" size="1.778" layer="51" ratio="15" rot="R180" align="bottom-right">Josh Datko / Casey Kuhns</text>
 </plain>
 <libraries>
