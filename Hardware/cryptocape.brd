@@ -287,6 +287,7 @@
 <wire x1="82.4992" y1="17.0942" x2="81.8642" y2="17.0942" width="0.254" layer="22"/>
 <text x="85.09" y="27.94" size="1.778" layer="22" font="vector" ratio="15" rot="SMR270">Cryptotronix</text>
 <text x="85.09" y="45.466" size="1.778" layer="22" font="vector" ratio="15" rot="SMR270">CryptoCape</text>
+<text x="24.384" y="6.858" size="0.8128" layer="21" font="vector" ratio="15" rot="R180" align="bottom-center">I2C EN</text>
 </plain>
 <libraries>
 <library name="SparkFun-DigitalIC">
