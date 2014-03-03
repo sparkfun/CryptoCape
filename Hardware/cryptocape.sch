@@ -5094,8 +5094,8 @@ LILYPAD- DIO-09910&lt;br&gt;</description>
 <part name="R7" library="SparkFun-Resistors" deviceset="4.7KOHM1/10W1%(0603)" device="" value="4.7k"/>
 <part name="R8" library="SparkFun-Resistors" deviceset="4.7KOHM1/10W1%(0603)" device="" value="4.7k"/>
 <part name="R9" library="SparkFun-Resistors" deviceset="4.7KOHM1/10W1%(0603)" device="" value="4.7k"/>
-<part name="JP2" library="SparkFun-Passives" deviceset="JUMPER-2" device="SMD-NO" value="Sets A1"/>
-<part name="JP1" library="SparkFun-Passives" deviceset="JUMPER-2" device="SMD-NO" value="Sets A0"/>
+<part name="JP2" library="SparkFun-Passives" deviceset="JUMPER-2" device="SMD-NO" value="Clears A1"/>
+<part name="JP1" library="SparkFun-Passives" deviceset="JUMPER-2" device="SMD-NO" value="Clears A0"/>
 <part name="GND10" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C1" library="SparkFun-Capacitors" deviceset="0.1UF-25V(+80/-20%)(0603)" device="" value="0.1u"/>
 <part name="SUPPLY2" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
@@ -5209,11 +5209,13 @@ LILYPAD- DIO-09910&lt;br&gt;</description>
 <wire x1="287.02" y1="116.84" x2="287.02" y2="60.96" width="0.1524" layer="94"/>
 <wire x1="231.14" y1="116.84" x2="287.02" y2="116.84" width="0.1524" layer="94"/>
 <text x="241.3" y="63.5" size="2.54" layer="94" font="vector">I2C Address Table</text>
-<text x="243.84" y="83.82" size="2.54" layer="94" font="vector">EEPROM   0x54
-TPM      0x29
+<text x="241.3" y="78.74" size="2.54" layer="94" font="vector">TPM      0x29
+ATAES132 0x50
+EEPROM   0x54
 ATECC108 0x60
 ATSHA204 0x64
-RTC      0x68</text>
+RTC      0x68
+(7 bit addresses)</text>
 <text x="365.76" y="36.068" size="2.54" layer="94" font="vector">AES-128 (ATAES132)</text>
 <text x="350.52" y="10.16" size="2.54" layer="94">Josh Datko / Casey Kuhns</text>
 <text x="421.64" y="7.62" size="2.54" layer="94">v01</text>
@@ -5247,7 +5249,10 @@ RTC      0x68</text>
 <instance part="R8" gate="G$1" x="43.18" y="91.44" rot="R90"/>
 <instance part="R9" gate="G$1" x="35.56" y="91.44" rot="R90"/>
 <instance part="JP2" gate="A" x="12.7" y="76.2" rot="MR270"/>
-<instance part="JP1" gate="A" x="30.48" y="76.2" rot="MR270"/>
+<instance part="JP1" gate="A" x="30.48" y="76.2" smashed="yes" rot="MR270">
+<attribute name="NAME" x="30.48" y="77.47" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="30.48" y="67.945" size="1.778" layer="96" rot="MR0"/>
+</instance>
 <instance part="GND10" gate="1" x="45.72" y="66.04"/>
 <instance part="C1" gate="G$1" x="129.54" y="76.2"/>
 <instance part="SUPPLY2" gate="G$1" x="129.54" y="106.68"/>
@@ -5293,7 +5298,7 @@ RTC      0x68</text>
 <instance part="SUPPLY21" gate="G$1" x="45.72" y="195.58"/>
 <instance part="GND23" gate="1" x="38.1" y="259.08"/>
 <instance part="GND24" gate="1" x="104.14" y="259.08"/>
-<instance part="GND25" gate="1" x="106.68" y="127"/>
+<instance part="GND25" gate="1" x="99.06" y="127"/>
 <instance part="GND26" gate="1" x="40.64" y="127"/>
 <instance part="J1" gate="G$1" x="281.94" y="33.02"/>
 <instance part="GND27" gate="1" x="299.72" y="22.86"/>
@@ -5526,7 +5531,7 @@ RTC      0x68</text>
 <pinref part="U$2" gate="P9" pin="DGND@6"/>
 <wire x1="91.44" y1="134.62" x2="99.06" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="GND25" gate="1" pin="GND"/>
-<wire x1="99.06" y1="134.62" x2="106.68" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="134.62" x2="99.06" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="P9" pin="DGND@4"/>
 <wire x1="91.44" y1="137.16" x2="99.06" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="137.16" x2="99.06" y2="134.62" width="0.1524" layer="91"/>

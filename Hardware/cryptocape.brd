@@ -170,8 +170,6 @@
 <text x="15.748" y="6.604" size="1.524" layer="21" font="vector" ratio="15" align="bottom-center">RTC</text>
 <text x="28.956" y="9.652" size="1.016" layer="21" font="vector" ratio="16" rot="R180" align="bottom-center">WP</text>
 <text x="28.956" y="9.906" size="1.27" layer="22" font="vector" ratio="16" rot="MR180" align="bottom-center">WP</text>
-<text x="42.291" y="7.747" size="1.016" layer="21" font="vector" ratio="15" align="bottom-center">Atmel Trusted</text>
-<text x="42.291" y="6.477" size="1.016" layer="21" font="vector" ratio="15" align="bottom-center">Platform Module</text>
 <wire x1="50.546" y1="6.096" x2="50.546" y2="11.303" width="0.4064" layer="21" style="shortdash"/>
 <wire x1="50.546" y1="11.303" x2="51.689" y2="11.303" width="0.4064" layer="21" style="shortdash"/>
 <wire x1="51.689" y1="11.303" x2="51.689" y2="20.574" width="0.4064" layer="21" style="shortdash"/>
@@ -246,7 +244,7 @@
 <text x="40.132" y="24.13" size="0.8128" layer="22" font="vector" ratio="15" rot="MR270" align="bottom-center">PROGRAM</text>
 <text x="36.322" y="24.13" size="0.8128" layer="22" font="vector" ratio="15" rot="MR270" align="bottom-center">JUMPERS</text>
 <text x="26.162" y="27.94" size="1.27" layer="21" font="vector" ratio="15" align="bottom-center">AES-128</text>
-<text x="44.704" y="22.606" size="1.016" layer="21" font="vector" ratio="15" rot="R180" align="bottom-center">MEGA328</text>
+<text x="44.704" y="22.606" size="1.016" layer="21" font="vector" ratio="15" rot="R180" align="bottom-center">m328P</text>
 <text x="51.816" y="9.525" size="0.8128" layer="21" font="vector" ratio="15" rot="R90" align="bottom-center">SDA</text>
 <text x="51.816" y="6.985" size="0.8128" layer="21" font="vector" ratio="15" rot="R90" align="bottom-center">SCL</text>
 <text x="51.816" y="9.525" size="0.8128" layer="22" font="vector" ratio="15" rot="MR270" align="bottom-center">SDA</text>
@@ -290,6 +288,7 @@
 <text x="24.384" y="6.858" size="0.8128" layer="21" font="vector" ratio="15" rot="R180" align="bottom-center">I2C EN</text>
 <text x="6.096" y="52.578" size="1.27" layer="16" font="vector" ratio="15" rot="MR90" align="bottom-center">v02</text>
 <text x="50.8" y="-9.652" size="1.778" layer="51" ratio="15" rot="R180" align="bottom-right">Josh Datko / Casey Kuhns</text>
+<text x="42.291" y="6.477" size="1.524" layer="21" font="vector" ratio="15" align="bottom-center">TPM</text>
 </plain>
 <libraries>
 <library name="SparkFun-DigitalIC">
@@ -2354,8 +2353,8 @@ design rules under a new name.</description>
 <element name="R9" library="SparkFun-Resistors" package="0603" value="4.7k" x="29.21" y="18.542" rot="R90">
 <attribute name="PROD_ID" value="RES-07857" x="3.81" y="13.462" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="JP2" library="SparkFun-Passives" package="SJ_2S-NO" value="Sets A1" x="26.67" y="23.368" rot="R90"/>
-<element name="JP1" library="SparkFun-Passives" package="SJ_2S-NO" value="Sets A0" x="29.21" y="23.368" rot="R90"/>
+<element name="JP2" library="SparkFun-Passives" package="SJ_2S-NO" value="Clears A1" x="26.67" y="23.368" rot="R90"/>
+<element name="JP1" library="SparkFun-Passives" package="SJ_2S-NO" value="Clears A0" x="29.21" y="23.368" rot="R90"/>
 <element name="C1" library="SparkFun-Capacitors" package="0603-CAP" value="0.1u" x="29.21" y="14.224" rot="R270">
 <attribute name="PROD_ID" value="CAP-00810" x="44.45" y="100.584" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
