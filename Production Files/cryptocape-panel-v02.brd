@@ -778,6 +778,23 @@
 <wire x1="171.45" y1="130.81" x2="171.45" y2="137.16" width="0.2032" layer="20"/>
 <wire x1="109.22" y1="130.81" x2="171.45" y2="130.81" width="0.2032" layer="20"/>
 <wire x1="109.22" y1="137.16" x2="109.22" y2="130.81" width="0.2032" layer="20"/>
+<text x="11.43" y="120.65" size="1.778" layer="20" font="vector" ratio="7" rot="R90">Route Out</text>
+<text x="10.16" y="104.14" size="1.778" layer="20" font="vector" ratio="7">Route Out</text>
+<text x="11.43" y="57.15" size="1.778" layer="20" font="vector" ratio="7" rot="R90">Route Out</text>
+<text x="11.43" y="41.91" size="1.778" layer="20" font="vector" ratio="7">Route Out</text>
+<text x="100.33" y="43.18" size="1.778" layer="20" font="vector" ratio="7">Route Out</text>
+<text x="101.6" y="105.41" size="1.778" layer="20" font="vector" ratio="7">Route Out</text>
+<text x="90.17" y="133.35" size="1.778" layer="20" font="vector" ratio="7">Route Out</text>
+<text x="173.99" y="133.35" size="1.778" layer="20" font="vector" ratio="7">Route Out</text>
+<text x="175.26" y="71.12" size="1.778" layer="20" font="vector" ratio="7">Route Out</text>
+<text x="175.26" y="8.89" size="1.778" layer="20" font="vector" ratio="7">Route Out</text>
+<text x="88.9" y="8.89" size="1.778" layer="20" font="vector" ratio="7">Route Out</text>
+<text x="8.89" y="8.89" size="1.778" layer="20" font="vector" ratio="7" rot="R90">Route Out</text>
+<text x="101.6" y="72.39" size="1.778" layer="20" font="vector" ratio="7" rot="R180">Route Out</text>
+<text x="187.96" y="109.22" size="1.27" layer="20" font="vector" ratio="7" rot="R270">Route Out</text>
+<text x="187.96" y="45.72" size="1.27" layer="20" font="vector" ratio="7" rot="R270">Route Out</text>
+<text x="100.33" y="124.46" size="1.27" layer="20" font="vector" ratio="7" rot="R270">Route Out</text>
+<text x="100.33" y="60.96" size="1.27" layer="20" font="vector" ratio="7" rot="R270">Route Out</text>
 </plain>
 <libraries>
 <library name="SparkFun-DigitalIC">
