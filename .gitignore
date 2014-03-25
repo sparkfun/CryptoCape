@@ -1,6 +1,8 @@
 #################
 ## SparkFun Useful stuff
 #################
+*.b#?
+*.s#?
 /Misc
 
 ## AVR Development
