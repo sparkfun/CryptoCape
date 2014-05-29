@@ -1,8 +1,8 @@
 CryptoCape
 ==========
 
-[![Part Name](URL for picture of part)
-*Part Name (SKU)*](URL for product on Sparkfun.com)
+[![CryptoCape](https://cdn.sparkfun.com//assets/parts/9/5/4/9/12773-01a.jpg)
+*CryptoCape (DEV-12773)*](https://www.sparkfun.com/products/12773)
 
 A Cryptography Cape for the BeagleBone Black.
 
